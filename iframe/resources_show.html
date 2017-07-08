@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Resources</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap-native.css" rel="stylesheet">
+    <!-- Plugin CSS -->
+
+    <!-- Theme CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+body{
+  background-color:#f5f5f5;
+  height:100%;
+}
+hr {
+  border-color: #F74356;
+  border-width: 2px;
+  max-width:80vw;
+  padding:5px 0 5px 0;
+  margin:0 auto 0 0;
+}
+.card-block-parts hr{
+  border-color:#a1a1a1;
+  max-width: 5vw;
+  margin:5px auto 5px auto;
+}
+.card-block-parts{
+  font-size: 14px;
+}
+.padding-none {
+  padding:0 0 0 0;
+}
+.row {
+    margin:0 0 0 0;
+}
+
+/* CSS - Title Plan */
+.title-plan{
+  background-color:#535353;
+  text-align:center;
+}
+.title-plan  p{
+  color:#fff;
+}
+.title-plan  .author {
+  text-align: left;
+}
+.title-plan  .title{
+  font-size:50px;
+  font-weight: bold;
+  padding:5px 10px 0 10px;
+  margin:0 0 0 0;
+  text-align: left;
+}
+.card {
+  margin:20px;
+  border:3px solid #f0f0f0;
+  box-shadow: 1px 1px 5px #888888;
+  border-radius:5px;
+  padding: 0 0 10px 0;
+
+}
+.card-header{
+  background-color:#f1f1f0;
+  padding:5px 0 5px 0;
+  font-size:20px;
+  font-weight:bold;
+}
+.card-block{
+  padding:0 10px 0 10px;
+  margin:20px 0 20px 0;
+}
+.card-date{
+
+}
+.card-tagline{
+  padding-top: 5px;
+  font-style:italic;
+  font-size:13px;
+  font-family:sans-serif;
+  text-align:center;
+  width:500px;
+  margin:0 auto;
+}
+.card-title {
+  padding:0 0 0 0;
+}
+.container-title > *{
+  /*background-color: rgba(131,53,118, 0.9);*/
+  display:inline-block;
+}
+.container-info{
+  text-align:left;
+}
+.container-info > * {
+  background-color: rgba(0,0,0, 0.5);
+  display:inline-block;
+  padding:3px 10px 3px 10px;
+}
+.container-info a{
+  color:white;
+}
+.container-button{
+  text-align:center;
+}
+.container-button > button {
+  color:white;
+  background-color:#4bc59c;
+}
+.container-button >button:hover,
+.container-button>button:active{
+  color:#fff;
+  background-color:#79c7ad;
+}
+.nav-link:active{
+  background-color:#d9d9d9;
+}
+.list-resources {
+    padding:0 0 0 0;
+}
+.list-resources > li{
+  list-style-type: none;
+}
+.title-return{
+  display:inline-block;
+  text-align:left; 
+  padding:2px 15px 2px 15px;
+  margin-bottom:0 0 0 0 !important;
+  font-size:18px;  
+  background-color: rgba(104,197,238, 0.6);
+}
+.title-return a{
+   text-decoration: none;
+}
+.title-return:hover{
+  font-weight:bolder;
+}
+
+/* New CSS TESTING!!! */
+.card-parts{
+  border-radius: 0;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+
+}
+
+@media (max-width: 992px){
+  .container-box-outer{
+    padding-bottom:15vh;
+  }
+}
+.container-box-outer {
+    vertical-align:middle;
+
+}
+.container-box-inner{
+  vertical-align:middle;
+  text-align: left;
+}
+.image-box{
+  box-shadow: 1px 0px 0px #000;
+}
+.container-log{
+  margin:10px 10px 10px 10px;
+  padding:15px 25px 15px 25px;
+  box-shadow: 1px 1px 5px #888888;
+
+}
+.container-log > .log-title {
+  font-size:30px;
+  color:#0f0f0f;
+}
+.container-log >.log-tagline{
+  padding:5px 0 0 0 ;
+  width:60vw;
+  overflow:auto;
+  font-size:9px;
+}
+.container-log >.log-date{
+  padding:5px 0 0 0;
+}
+.container-log > .log-separator{
+  color:#ed465a;
+  text-align:center;
+}
+.container-log > .log-description{
+  font-size: 14px;
+}
+.log-edit, .log-addfile{
+  color:#1882b1;
+  float:right;
+  font-size:13px;
+  text-decoration: none;
+  margin:3px 5px 0 5px;
+}
+.log-links p{
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+
+.row {
+    display: table;
+}
+
+.row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+</style>
+</head>
+
+<body>
+<div class="title-plan">
+  <div class="row">
+    <div class="col-md-6 padding-none image-box" style="border:4px solid #000">
+      <img src="../img/page_cover.jpg" width="100%">
+    </div>
+    <div class="col-md-6 container-box-outer">
+      <div class="container-box-inner">
+        <div class="container-title">
+          <p class="title" style="display:inline-block"> Open-source robotic and bionic devices. </p>
+        </div>
+        <div class="container-info">
+          <p class="author">Author: <i>OpenΒionics </i><span style="display:inline-block;width:30px">
+          </span>
+          </p> 
+          <p>Contact: <a href="">https://openbionics.org/</a></p>
+        </div>
+        <p class="title-return"><a href="" style="color:#fff">&#9666 Return</a></p>
+        <p class="title-return"><a href="" style="color:#fff">Edit</a></p>
+        <p class="title-return"><a href="" style="color:#fff">Add Picture</a></p>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <div class="card card-parts text-center" style="max-width: 40vw; margin: 10px auto 10px auto">
+  <div class="card-header ">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" style="border-bottom:3px solid;">Parts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tools</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-block card-block-parts">
+    <p class="card-text">Affordable Prosthetic Hands (.CAD)</p><hr align="center">
+    <p class="card-text">Robot Hands (.CAD)</p><hr align="center">
+    <p class="card-text">ROS Package </p><hr align="center">
+    <p class="card-text">Arduino Micro microcontroller</p><hr align="center">
+  </div>
+</div>
+
+
+<div class="container-log">
+  <div class="log-title">
+    <p> Robot Finger Structure</p>
+  </div>
+  <hr>
+  <div class="log-date">07/02/2015 09:12:59pm </div>
+  <div class="log-tagline"><i>In this section we present the robot finger structure and we explain the design choices made. The proposed design is based on the following simple/bioinspired idea: to structurally reproduce the flexion/extension motions of human fingers, using steady elastomer material (that introduce alsocompliance) for a passive extension and cables driven through low-friction tubes for the flexion
+</i></div>
+  <p class="log-separator">&#9670</p>
+  <div class="log-description">
+    <p>The proposed basis is equipped with 5 slots and can be used for attaching a total of four fingers,as depicted in Fig.  3.  More specifically, robot hands with various geometries of finger base framescan be developed.  Those hands are capable of grasping various everyday life objects and each one is specialized for executing different types of grasping tasks.  This reflects the basic idea for the presented design, that someone can create multiple, low-cost, task-specific robot hands, instead of one that is complex and expensive.</p>
+    <img src="../img/test1.png" style="margin:0 auto 0 auto" width="50%">
+    <p>A disk-shaped differential mechanism has been developed to connect all the independent fingerb cables with the actuator (servo motor). The differential mechanism allows for independent finger flexions in case that one or multiple fingers have stopped moving, due to workspace constraints or in case that they are already in contact with the object surface. The mechanism is simple since it consists of a few simple parts (a Plexiglas disk, the dyneema fishing line and pulleys) and requires relatively small space in order to perform efficiently. Also, the differential disk moves in the air without being guided by sliders in an effort to minimize friction in the tendon routing system. Our differential mechanism is a variant of the whiffle tree (or seesaw) mechanism</p>
+  </div>
+  <p class="log-separator">&#9671</p>
+  <div class="log-links">
+    <p><a href="../img/Openbionic.pdf">Openbionic.pdf</a></p>
+    <p><a href="../img/OpenSourceRobotHands.pdf">OpenSourceRobotHands.pdf</a></p>
+    <p><a href="../img/CADProsthetic.zip">CADProsthetic.zip</a></p>
+  </div>
+</div>
+
+
+
+
+
+<div class="container-log">
+  <div class="log-title">
+    <p>A Robot Hand Basis that Provides Modularity</p>
+  </div>
+  <hr>
+  <div class="log-date">04/01/2015 15:43:23pm </div>
+  <div class="log-tagline"><i>The efficiency of the proposed robot hands has been experimentally validated through a series of experimental paradigms, involving: grasping of multiple everyday life objects with different geometries, myoelectric
+(EMG) control of the robot hands in grasping tasks, preliminary results on a grasping capable quadrotor and autonomous grasp
+planning under object position and shape uncertainties.
+</i></div>
+  <p class="log-separator">&#9670</p>
+  <div class="log-description">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/F_brnKz_2tI"></iframe>
+    <p>For the elastomer material, we use appropriate silicone sheets which add adaptability to the structure and provide a more robust and stable behavior even when attempting to grasp objects with complex shapes. The stiffness of the finger joints can be described by a stiffness matrix with non-zero values in its diagonal, which allows the robot finger to adapt to objects of different shapes. On the other hand, in manipulation tasks, the uncontrolled out-of-plane motion of the fingers, is typically undesired. In order to balance the two requirements we used a similar tendon routing with Awiwi Hand.</p>
+  </div>
+  <p class="log-separator">&#9671</p>
+  <div class="log-links">
+    <p><a href="../img/Openbionic.pdf">Openbionic.pdf</a></p>
+    <p><a href="../img/OpenSourceRobotHands.pdf">OpenSourceRobotHands.pdf</a></p>
+    <p><a href="../img/CADProsthetic.zip">CADProsthetic.zip</a></p>
+  </div>
+</div>
+
+
+
+<div class="container-log">
+  <div class="log-title">
+    <p>ROS Package</p>
+  </div>
+  <hr>
+  <div class="log-date">10/02/2015 21:25:51pm </div>
+  <div class="log-tagline"><i>Τhe Planner PC runs two nodes, the client node (Main.py) and the server node (stdServo.py or robotHand.py). The client node (Main.py) receives from the user the angle of the servo motor. The server node sends the desired angle to the robot hand.
+</i></div>
+  <p class="log-separator">&#9670</p>
+  <div class="log-description">
+    <p><b>ROS Installation</b></p>
+
+<p> Install this ROS package placing the folder in the /src directory of your ROS workspace. Build the package using the following command:</p>
+
+    <p> <i>$catkin_make</i></p>
+
+<p>You have successfully installed the package. Make sure that all files are executable, using the following commands:</p>
+
+    <p><i>$chmod +x Main.py</i></p>
+    <p><i>$chmod +x stdServo.py</i></p>
+    <p><i>$chmod +x robotHand.py</i></p>
+
+<p><b>Arduino Installation</b></p>
+
+<p>Upload with the arduino IDE, the provided program to the arduino Micro board.
+For the Dynamixel AX12 servo, we use this library.</p>
+<p><b>How to run ROS nodes</b></p>
+
+<p>To run this ROS package, you have to run one of the following launch files:</p>
+
+    <p><i>$roslaunch openbionics stdServo.launch</i></p>
+    <p><i>$roslaunch openbionics HandAX12.launch</i></p>
+
+<p>In the launch file you can set up the USB port, to establish serial communication with the robot hand. For the robot hand with the AX12 servo, the server node returns the state of the servo motor: 1) the goal position, 2) the current position and 3) the load. In order to do so, the robotHand.py node publishes the state of the motor, in the Hand ROS topic.</p>
+<p><b>How to control the robot hand </b></p>
+
+<p>To control the robot hand you can use the following command:</p>
+
+   <p><i> $rosrun openbionics Main.py arg1 arg2 arg3</i></p>
+
+ <p>Replace the arg1 with STD or AX12 depending on your servo. </p>
+ <p>Replace the arg2 with the command that you want send to robot hand (e.g., PS is used for position control of the servo).</p> 
+ <p>Replace the arg3 with the desired joint angle value (the ranges are: 0 – 218 for stdServo, 100 – 1023 for AX12).</p>
+  </div>
+  <p class="log-separator">&#9671</p>
+  <div class="log-links">
+    <p><a href="../img/Software.zip">Software.zip</a></p>
+    <p><a href="../img/ROScheatsheet.pdf">ROScheatsheet.pdf</a></p>
+  </div>
+</div>
+
+
+<div class="container-log">
+  <div class="log-title">
+    <p>Robot Hand Specifications</p>
+  </div>
+  <hr>
+  <div class="log-date">15/02/2015 18:41:30pm </div>
+  <div class="log-tagline"><i>ΤIn this section we present the robot hand specifications, i.e., the physical characteristics (finger workspace and forces), design parameters and grasping capabilities.
+</i></div>
+  <p class="log-separator">&#9670</p>
+  <div class="log-description">
+    It should be noted that although in this project we are not proposing anthropomorphic
+robot hands, we used the metric presented in [9] in order to define the lengths for all phalanges
+and the relative positions of the finger base frames, maximizing humanlikeness of specific aspects
+of our design. Such a choice was made based on the hypothesis, that even if we design our simple
+robot hands as anthropomorphically as possible, we will maximize their ability to grasp objects
+created for the human hand. For our design we have used identical robot fingers following the
+dimensions of human index finger and for the distance between the opposing finger base frames
+we have selected the distance between the CMC of the thumb and the MCP of the index. This
+distance can be obtained using hand anthropometry studies.
+  <iframe src="../img/Robothand.pdf" width="80%" height="400vh"></iframe>
+  </div>
+  <p class="log-separator">&#9671</p>
+  <div class="log-links">
+    <p><a href="../img/Electronics.zip">Electronics.zip</a></p>
+  </div>
+</div>
+
+
+<div class="cards-after-me">
+</div>
+
+<!-- Edit button - For owner only -->
+<div class="container-button"> 
+  <button class="btn">Add Log</button>
+</div>
+
+  <!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.js"></script>
+
+<!-- Insert cards script -->
+<!--Step of using the card script:
+(i) Import cards with description, resources, and downloads from the database
+(ii) Push cards into the card[] array by following the structure of Clas "Card"
+(*The "Generate Cards with Resources from database here" part should be modify for different data importing method)
+(iii) The code will handle the rest :)
+-->
+
+<script>
+//!!Cards Initialization!!//
+var card_number = 0; //Grab number of cards required here
+var card=[];
+var card_title=[];
+var card_tagline= [];
+var card_description= [];
+var card_date = [];
+var card_addfilelink = [];
+var card_editlink = [];
+var card_links = [];
+
+function Card(title, tagline, description, date, addfilelink, editlink, links){
+  this.title=title;
+  this.tagline=tagline;
+  this.description=description;
+  this.date=date;
+  this.addfilelink = addfilelink;
+  this.editlink = editlink
+  this.links = links;
+} 
+//Generate Cards with Resources from database here//
+card.push(new Card('Director’s Statement', 'Bound by their painful past, a mother and a daughter go on a journey in an attempt to find salvation.', 'For the longest time I used to think we did not matter; for the longest time I used to think we were invisible; for the longest time I used to think we had no place in society.Whether it’s because my mother is a lesbian, or because she quietly endured domestic abuse, or because my sister and I never received proper education, I always thought that our pain was our own, and that we had to suppress that pain.But once I became a mother, I realized that if I don’t face my pains, I will never heal or be a good enough mother for my own daughter. If I don’t heal, the pain of my and my mother will be passed onto my daughter.Not only do I want to tell this story in order that I can heal, I also want to help shed light on the pain that have haunted those who don’t believe they have a voice, who don’t think they matter.', '03/03/2017','https://www.google.com','https://www.google.com',['https://www.oma.on.ca/en/contestpages/resources/free-report-cinematography.pdf']));
+
+for(i=0;i<card.length;i++){
+  card_title.push(card[i].title);
+  card_tagline.push(card[i].tagline);
+  card_description.push(card[i].description);
+  card_date.push(card[i].date);
+  card_editlink.push(card[i].editlink);
+  card_addfilelink.push(card[i].addfilelink);
+  card_links[i]=[];
+  for (j=0;j<card[i].links.length;j++){
+    var count = 0;
+    for (k=0;k<card[i].links[j].length;k++) {
+      if (card[i].links[j].charAt(k)=='/') {count=k;}
+    }
+    card_links[i].push(card[i].links[j].substring(count+1, card[i].links[j].length));
+  }
+}
+//End of Initialization//
+
+$('body').ready(function(){
+  for (i=0;i<card_number;i++)
+  {
+    var temp_cardname = 'log'+i;
+    $('.cards-after-me').append(' <div class="container-log '+ temp_cardname +'"><div class="log-title">'+ card_title[i]+'</p><p><a class="log-edit" href="'+ card_editlink[i] +'">Edit</a><a class="log-addfile" href="'+card_addfilelink[i]+'">Add more files</a></p></div><hr><div class="log-date">'+card_date[i]+'</div><div class="log-tagline"><i>'+card_tagline[i]+'</i></div><p class="log-separator">&#9670</p><div class="log-description"><p>'+card_description[i] +'</p></div><p class="log-separator">&#9671</p><div class="log-links"></div></div>');
+    var temp_cardname_class = '.'+temp_cardname;
+    for(j=0;j<card_links[i].length;j++){
+      $(temp_cardname_class).find('.log-links').append('<p><a href="' + card_links[i][j] + '">'+card_links[i][j]+'</a></p>');
+    }
+  }
+});
+
+var a = '/Testin3t/Test1ing/Testinasdfasdfg.pdf';
+var count = 0;
+for (i;i<a.length;i++){
+  if(a.charAt(i)=='/') {count = i;}
+};
+console.log(a.substring(count+1, a.length));
+</script>
+<!-- End of Insert Card Script -->
+</body>
+
+</html>
