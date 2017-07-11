@@ -25,11 +25,12 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #4c88be;
+  color: #88efec;
+  font-family: 'Cantarell';
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #e81954;
 }
 h1,
 h2,
