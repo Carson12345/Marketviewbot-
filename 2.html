@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>City Gallery</h1>
+</header>
+  
+
+<form name="payFormCcard" method="post" action="https://test.paydollar.com/b2cDemo/eng/payment/payForm.jsp">
+<input type="hidden" name="merchantId" value="1">
+<input type="Number" name="amount" value="3000.0" >
+<input type="hidden" name="orderRef" value="000000000014">
+<input type="hidden" name="currCode" value="344" >
+<input type="hidden" name="mpsMode" value="NIL" >
+<input type="hidden" name="successUrl" value="http://www.yourdomain.com/Success.html">
+<input type="hidden" name="failUrl" value="http://www.yourdomain.com/Fail.html">
+<input type="hidden" name="cancelUrl" value="http://www.yourdomain.com/Cancel.html">
+<input type="hidden" name="payType" value="N">
+<input type="hidden" name="lang" value="E">
+<input type="hidden" name="payMethod" value="CC">
+<input type="hidden" name="secureHash" value="44f3760c201d3688440f62497736bfa2aadd1bc0">
+<input type="submit" name="submit">
+</form>
+
+<footer>Copyright &copy; W3Schools.com</footer>
+
+</div>
+
+</body>
+</html>

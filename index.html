@@ -134,6 +134,15 @@ hr {
 
 <body>
 <!--Navigation Bar-->
+    <script>
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'Messenger'));
+    </script>     
 
 
 
@@ -169,6 +178,36 @@ hr {
     <!-- /.container -->
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
+<script>
+    (function () {
+    var button = document.createElement("div");
+    document.getElementsByTagName('body')[0].appendChild(button);
+    button.outerHTML = "<div id='bot-button' style='height: 50px; width: 50px; position: fixed; cursor: pointer; bottom: 5%; right: 5%; border-radius:25px; box-shadow: 0px 0px 5px black; z-index: 1001; background-color: crimson'><img id='button-click' alt='Button' style='height:100%; width:100%;  z-index: 1002;' src='https://media.smooch.io/58cbbac741ea923900a4a74c/icons/web_button_icon.jpg'></div>"; 
+
+
+    var div = document.createElement("div");
+    document.getElementsByTagName('body')[0].appendChild(div);
+    div.outerHTML = "<div id='botDiv' style='height: 0px; position: fixed; bottom: 0; right: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' src='iframe/bot.html'></iframe></div>"; 
+
+    document.querySelector('body').addEventListener('click', function (e) {
+        e.target.matches = e.target.matches || e.target.msMatchesSelector;
+        if (e.target.matches('#button-click')) { 
+            var botDiv = document.querySelector('#botDiv'); 
+            botDiv.style.height = botDiv.style.height == '600px' ? '0px' : '600px';
+            var botbutton = document.querySelector('#bot-button');
+            botbutton.style.height = botDiv.style.height == '600px' ? '0px' : '38px';
+
+        } else if (e.target.matches('#botTitleBar')) { 
+            var botDiv = document.querySelector('#botDiv'); 
+            botDiv.style.height = botDiv.style.height == '600px' ? '0px' : '600px';
+            var botbutton = document.querySelector('#bot-button');
+            botbutton.style.height = botDiv.style.height == '600px' ? '0px' : '50px';
+
+        };
+    });
+}());
+</script>
+
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
