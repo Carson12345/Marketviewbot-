@@ -77,26 +77,25 @@
         unixNow = 0;
 
         window.SmoochOptions = {
-            serviceUrl: 'https://api.smooch.io',
+
             appToken: '60bdtrf3sv4s8673dm22f9cbr',
-            givenName: 'GIVEN_NAME',
-            surname: 'SURNAME',
-            email: 'EMAIL',
-            jwt: 'JWT',
-            userId: 'USER_ID',
-            properties: PROPERTIES,
-            emailCaptureEnabled: true, 
-            imageUploadEnabled: false,    
-            linkedEnabled: false,
-            filterHistory: unixNow,
+
+            givenName: 'Cool',
+            surname: 'Person',
+            email: 'their_email@whatever.com',
+            userId: 'user_id',
             disclaimer: disclaimer,
-            // DisplayChoiceEnabled: false,
-            // stickyHeaderEnabled: false,
             speech: 'zh-HK',
+            soundNotificationEnabled: true,
+            stickyHeaderEnabled: false,
             customText: {
-                readMoreText: 'Read more',
-                readLessText: 'Read less',
-                disclaimerHeader: '<b>Important Notice:<\/b>'
+                headerText: 'How can we help?',
+                inputPlaceholder: 'Type a message...',
+                sendButtonText: 'Send',
+                introductionText: 'We\'re here to talk, so ask us anything!',
+                introAppText: 'Message us below or from your favorite app.',
+                ReadMoreText: 'Read more',
+                ReadLessText: 'Read less'
             }
         };
 
