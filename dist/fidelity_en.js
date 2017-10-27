@@ -16,7 +16,6 @@ disclaimer += "<\/span>";
 
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
 
-localStorage.removeItem('sk_deviceid');
 
 var greeting = false;
 
