@@ -60,7 +60,7 @@ getIP().then(function(data){
 
             setTimeout(function(){ 
                 document.getElementById("read-more-checker-id").checked = true;
-            }, 1000);
+            }, 2000);
             
             setTimeout(function() {      
               var userId = Clare.getUserId();
