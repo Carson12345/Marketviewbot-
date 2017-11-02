@@ -57,6 +57,10 @@ getIP().then(function(data){
       Smooch.on('widget:opened', function(message) {  
         if (!greeting){
             greeting = true;
+
+            setTimeout(function(){ 
+                $('#read-more-checker-id').prop('checked', true);
+            }, 1000);
             
             setTimeout(function() {      
               var userId = Clare.getUserId();
@@ -72,9 +76,6 @@ getIP().then(function(data){
                       dataType: "json",
                       success: function (responseData, textStatus, jqXHR) {
                         Clare.getConversation();
-                        setTimeout(function(){ 
-                            $('#read-more-checker-id').prop('checked', true);
-                        }, 1000);
                       },
                       error: function (responseData, textStatus, errorThrown) {
                           
