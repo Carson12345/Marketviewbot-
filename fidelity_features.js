@@ -59,7 +59,7 @@ getIP().then(function(data){
             greeting = true;
 
             setTimeout(function(){ 
-                $('#read-more-checker-id').prop('checked', true);
+                document.getElementById("read-more-checker-id").checked = true;
             }, 1000);
             
             setTimeout(function() {      
