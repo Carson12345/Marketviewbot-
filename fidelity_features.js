@@ -78,8 +78,9 @@ getIP().then(function(data){
                         Clare.getConversation();
                       },
                       error: function (responseData, textStatus, errorThrown) {
-                          
+                        
                       }
+
                   });
 
                   // Smooch.track('greeting');
